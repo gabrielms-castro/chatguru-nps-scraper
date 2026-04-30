@@ -1,11 +1,11 @@
 import os
 
-from datetime import datetime
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from pathlib import Path
 
 load_dotenv()
-TODAY = datetime.now().strftime("%Y-%m-%d")
+TODAY = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
 
 # Diretórios
 BASE_DIR = Path(__file__).resolve().parent.parent
