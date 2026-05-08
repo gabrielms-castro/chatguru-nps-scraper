@@ -16,10 +16,11 @@ CONFIGS = {
     "EMAIL" : os.getenv("EMAIL"),
     "PASSWORD" : os.getenv("PASSWORD"),
     "BASE_URL" : os.getenv("BASE_URL"),
-    "MYSQL_HOST" : os.getenv("MYSQL_HOST"),
-    "MYSQL_USER" : os.getenv("MYSQL_USER"),
-    "MYSQL_PASSWORD" : os.getenv("MYSQL_PASSWORD"),
-    "MYSQL_DATABASE" : os.getenv("MYSQL_DATABASE"),
+    "SQLITE_DB_PATH": os.getenv("SQLITE_DB_PATH"),
+    "MYSQL_HOST" : os.getenv("MYSQL_HOST", ""),
+    "MYSQL_USER" : os.getenv("MYSQL_USER", ""),
+    "MYSQL_PASSWORD" : os.getenv("MYSQL_PASSWORD", ""),
+    "MYSQL_DATABASE" : os.getenv("MYSQL_DATABASE", ""),
 }
 
 PREFIX_MAPPER = {

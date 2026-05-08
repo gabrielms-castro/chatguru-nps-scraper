@@ -37,7 +37,7 @@ from src.integrations.google.gmail import (
 
 
 def main():
-
+    
     # --- Setup dos Logs --- #
     log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'logs')
     os.makedirs(log_dir, exist_ok=True)

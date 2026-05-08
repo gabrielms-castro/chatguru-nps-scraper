@@ -1,6 +1,8 @@
 import sqlite3
 
-DB_PATH = r"\\192.168.11.88\\Projetos\\phd-bi-nps\\nps.db"
+from src.config import CONFIGS
+
+DB_PATH = CONFIGS.get("SQLITE_DB_PATH")
 
 sqlite_connection = sqlite3.connect(
     DB_PATH,
